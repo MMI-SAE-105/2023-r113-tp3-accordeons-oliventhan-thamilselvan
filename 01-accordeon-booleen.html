@@ -12,15 +12,15 @@
     <div class="accordeon">
       <section x-data="{isOpen: false}">
         <button @click="isOpen = !isOpen">bouton 1</button>
-        <p x-show="isOpen === true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit quia dicta aspernatur voluptatum qui sed soluta beatae libero, tempora perferendis repellat, excepturi impedit esse perspiciatis. Quam eos tempora quae.</p>
+        <p x-show="isOpen === true" x-transition.duration.400ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit quia dicta aspernatur voluptatum qui sed soluta beatae libero, tempora perferendis repellat, excepturi impedit esse perspiciatis. Quam eos tempora quae.</p>
       </section>
       <section x-data="{isOpen: false}">
         <button @click="isOpen = !isOpen">bouton 2</button>
-        <p x-show="isOpen === true">Vel labore esse sunt quam dolores aliquam. Cupiditate veritatis ipsam doloribus est odit libero alias nesciunt maiores esse neque! Architecto voluptates vitae officiis sequi quam eius consequatur eum, numquam expedita?</p>
+        <p x-show="isOpen === true" x-transition.duration.400ms>Vel labore esse sunt quam dolores aliquam. Cupiditate veritatis ipsam doloribus est odit libero alias nesciunt maiores esse neque! Architecto voluptates vitae officiis sequi quam eius consequatur eum, numquam expedita?</p>
       </section>
       <section x-data="{isOpen: false}">
         <button @click="isOpen = !isOpen">bouton 3</button>
-        <p x-show="isOpen === true">Sit, debitis. Officiis maxime tempora mollitia dignissimos, repudiandae a quasi vero quis laborum pariatur nemo delectus ut officia, laboriosam neque earum inventore, sit id. Cum qui aliquam praesentium aliquid ratione!</p>
+        <p x-show="isOpen === true" x-transition.duration.400ms>Sit, debitis. Officiis maxime tempora mollitia dignissimos, repudiandae a quasi vero quis laborum pariatur nemo delectus ut officia, laboriosam neque earum inventore, sit id. Cum qui aliquam praesentium aliquid ratione!</p>
       </section>
     </div>
   </body>
