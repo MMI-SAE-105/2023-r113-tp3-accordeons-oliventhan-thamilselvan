@@ -1,7 +1,37 @@
 .ouvert {
-    background-color: tomato;
-    color: black;
-    padding: 16px;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    font-size: 16px;
+  }
+.fermer {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.fermer:hover {
+    background-color: #03bbf9;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.fermer, .ouvert {
+    margin: 5px;
 }
