@@ -10,9 +10,9 @@
   <body>
     <h1>Accordéon avec des booléens</h1>
     <div class="accordeon">
-      <section>
-        <button>bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, consequuntur quibusdam? Fugit quo reiciendis sint mollitia illum sed dicta adipisci nihil vero, officia repudiandae aut voluptatum earum, quia nobis molestias.</p>
+      <section x-data="{isOpen: false}">
+        <button @click="isOpen = true">bouton 1</button>
+        <p x-show="isOpen === true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit quia dicta aspernatur voluptatum qui sed soluta beatae libero, tempora perferendis repellat, excepturi impedit esse perspiciatis. Quam eos tempora quae.</p>
       </section>
       <section>
         <button>bouton 2</button>
