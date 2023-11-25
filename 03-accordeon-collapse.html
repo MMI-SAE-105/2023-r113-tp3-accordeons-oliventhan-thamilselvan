@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Accordéon avec x-collapse</title>
   </head>
@@ -12,7 +13,7 @@
     <div class="accordeon">
       <section x-data="{expanded: false}">
         <button @click="expanded = !expanded">bouton 1</button>
-        <p x-show="expanded" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium magni neque debitis dolore cumque impedit, eveniet, pariatur esse minus labore dicta error inventore facilis natus! Harum consequuntur expedita a?</p>
+        <p x-show="expanded" x-collapse.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium magni neque debitis dolore cumque impedit, eveniet, pariatur esse minus labore dicta error inventore facilis natus! Harum consequuntur expedita a?</p>
       </section>
       <section>
         <button>bouton 2</button>
