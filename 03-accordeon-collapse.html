@@ -14,15 +14,15 @@
     <h1>Accordéon avec <code>x-collapse</code></h1>
     <div class="accordeon">
       <section x-data="{expanded: false}">
-        <button @click="expanded = !expanded">bouton 1</button>
+        <button :class="{ouvert:expanded}" @click="expanded = !expanded">bouton 1</button>
         <p x-show="expanded" x-collapse.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium magni neque debitis dolore cumque impedit, eveniet, pariatur esse minus labore dicta error inventore facilis natus! Harum consequuntur expedita a?</p>
       </section>
       <section x-data="{expanded: false}">
-        <button @click="expanded = ! expanded">bouton 2</button>
+        <button :class="{ouvert:expanded}" @click="expanded = ! expanded">bouton 2</button>
         <p x-show="expanded" x-collapse.duration.500ms>Nobis asperiores unde saepe, praesentium, provident ad expedita natus iusto, non repudiandae nam cumque aperiam illo aspernatur quae consequuntur pariatur quas amet quasi odio. Veritatis dolores fugit dicta sit aliquam.</p>
       </section>
       <section x-data="{expanded: false}">
-        <button @click="expanded = ! expanded">bouton 3</button>
+        <button :class="{ouvert:expanded}" @click="expanded = ! expanded">bouton 3</button>
         <p x-show="expanded" x-collapse.duration.500ms>Quis accusamus atque ratione nobis excepturi, explicabo itaque dolore dignissimos. Error quae aliquid dolore eos quas? Numquam ratione labore recusandae accusantium quo, tempora, aperiam odit cupiditate iure id esse consequuntur.</p>
       </section>
     </div>
