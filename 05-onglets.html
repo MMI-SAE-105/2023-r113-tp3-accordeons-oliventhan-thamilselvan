@@ -13,7 +13,7 @@
     <a href="index.html">Retour Index</a>
     <h1>Onglets</h1>
     <div id="onglets" x-data="{ouvert:0}">
-      <ul role="tablist">
+      <ul role="tablist" class="onglet-list">
         <li role="tab" @click="ouvert=1" :class="{actif:ouvert===1}">Onglet 1</li>
         <li role="tab" @click="ouvert=2" :class="{actif:ouvert===2}">Onglet 2</li>
         <li role="tab" @click="ouvert=3" :class="{actif:ouvert===3}">Onglet 3</li>

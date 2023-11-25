@@ -8,7 +8,7 @@
     position: absolute;
     opacity: 0;
   }
-
+  
   .actif[role="tabpanel"]{
     opacity: 1;
   }
@@ -17,4 +17,19 @@
       background-color: #eee;
       border: 1px solid #000;
       text-align: right;
+}
+
+.onglet-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.onglet-list li {
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: rosybrown;
+  padding: 10px 15px; 
+  border-radius: 5px;
+  color: white; 
 }
