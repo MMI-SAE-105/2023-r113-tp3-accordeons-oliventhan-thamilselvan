@@ -19,15 +19,15 @@
         <li role="tab" @click="ouvert=3" :class="{actif:ouvert===3}">Onglet 3</li>
       </ul>
       <div>
-        <div role="tabpanel" x-show="ouvert === 1">
+        <div role="tabpanel" :class="{actif:ouvert===1}">
           <h1>Panneau 1</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate reiciendis nulla corrupti quae corporis saepe explicabo illo, laboriosam quod iure cumque harum vitae assumenda suscipit ex tenetur fugiat? Magni, nemo.</p>
         </div>
-        <div role="tabpanel" x-show="ouvert === 2">
+        <div role="tabpanel" :class="{actif:ouvert===2}">
           <h1>Panneau 2</h1>
           <p>Possimus eius sed libero nulla, hic iure ratione vero quasi rerum. Incidunt, illum, eius dignissimos dolorum hic itaque possimus in cupiditate dolor voluptatum accusamus tempore dolores! Officiis nihil ratione itaque.</p>
         </div>
-        <div role="tabpanel" x-show="ouvert === 3">
+        <div role="tabpanel" :class="{actif:ouvert===3}">
           <h1>Panneau 3</h1>
           <p>Doloremque sit rerum aliquid vero accusantium, deserunt voluptatum laborum neque praesentium pariatur ducimus unde! Deleniti at veniam dolore sit adipisci reiciendis? Voluptates architecto sit, sint alias nemo impedit optio unde.</p>
         </div>

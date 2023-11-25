@@ -3,8 +3,12 @@
     width: 150px;
     height: 100px;
   }
-  
+
 [role="tabpanel"]{
     position: absolute;
+    opacity: 0;
+  }
+  
+  .actif[role="tabpanel"]{
     opacity: 1;
 }
