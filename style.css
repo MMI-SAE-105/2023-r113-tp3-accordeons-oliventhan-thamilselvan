@@ -45,15 +45,24 @@
     padding: 0;
   }
   
+
   #accordeon li {
     /* largeur de chaque élément replié 107px */
+    width: 107px;
     /* pour cacher le contenu dépassant de l'élément */
+    overflow: hidden;
     /* pour l'animation, transition sur width */
+    transition: width 0.5s;
     /* couleur de fond #eee */
+    background-color: #eee;
     /* pour enlever les puces */
+    list-style-type: none;
     /* pour espacer les éléments, marge de 3px */
+    margin: 3px;
     /* pour espacer le contenu, padding de 5px */
+    padding: 5px;
     /* pour arrondir les bords de 5px */
+    border-radius: 5px;
   }
   
   #accordeon li.actif {
