@@ -10,9 +10,9 @@
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
     <div class="accordeon">
-      <section>
-        <button>bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium magni neque debitis dolore cumque impedit, eveniet, pariatur esse minus labore dicta error inventore facilis natus! Harum consequuntur expedita a?</p>
+      <section x-data="{expanded: false}">
+        <button @click="expanded = !expanded">bouton 1</button>
+        <p x-show="expanded" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium magni neque debitis dolore cumque impedit, eveniet, pariatur esse minus labore dicta error inventore facilis natus! Harum consequuntur expedita a?</p>
       </section>
       <section>
         <button>bouton 2</button>
