@@ -1,4 +1,10 @@
 #onglets{
     position: relative;
     width: 150px;
+    height: 100px;
   }
+  
+[role="tabpanel"]{
+    position: absolute;
+    opacity: 1;
+}
